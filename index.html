@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Shop</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ================= NAVIGATION ================= -->
+
+    <nav class="navbar">
+
+        <div class="nav-container">
+
+            <!-- Logo -->
+            <a href="#" class="logo">
+                🛍️ MyShop
+            </a>
+
+            <!-- Navigation Links -->
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#products">Products</a>
+                <a href="#about">About</a>
+            </div>
+
+            <!-- Cart -->
+            <button class="cart-btn" onclick="openCart()">
+                🛒 Cart
+                <span id="cart-count">0</span>
+            </button>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <span class="hero-small">WELCOME TO MYSHOP</span>
+
+            <h1>
+                Find Products<br>
+                <span>You'll Love</span>
+            </h1>
+
+            <p>
+                Discover amazing products at great prices.
+                Shop your favorites today.
+            </p>
+
+            <a href="#products" class="shop-btn">
+                Shop Now →
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PRODUCTS ================= -->
+
+    <main id="products">
+
+        <div class="section-title">
+            <span>OUR COLLECTION</span>
+            <h2>Featured Products</h2>
+            <p>Explore our latest products</p>
+        </div>
+
+        <div class="container"></div>
+
+    </main>
+
+
+    <!-- ================= CART SIDEBAR ================= -->
+
+    <div id="cart-overlay" class="cart-overlay" onclick="closeCart()"></div>
+
+    <div id="cart-sidebar" class="cart-sidebar">
+
+        <div class="cart-header">
+
+            <h2>🛒 Your Cart</h2>
+
+            <button class="close-btn" onclick="closeCart()">
+                ×
+            </button>
+
+        </div>
+
+        <div id="cart-items" class="cart-items">
+            <p class="empty-cart">
+                Your cart is empty.
+            </p>
+        </div>
+
+        <div class="cart-footer">
+
+            <div class="cart-total">
+                <span>Total</span>
+                <strong id="cart-total">₹0</strong>
+            </div>
+
+            <button class="checkout-btn">
+                Proceed to Checkout
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
